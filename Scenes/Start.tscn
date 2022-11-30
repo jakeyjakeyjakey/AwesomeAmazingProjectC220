@@ -1,75 +1,83 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Response.gd" type="Script" id=1]
 [ext_resource path="res://Template.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Untitled_Artwork.jpg" type="Texture" id=3]
 
 [node name="Start" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
 [node name="Background" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
+scale = Vector2( 0.389974, 0.389974 )
+texture = ExtResource( 3 )
 centered = false
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 112.0
-margin_top = 25.0
-margin_right = 912.0
-margin_bottom = 375.0
-color = Color( 0, 0, 0, 0.509804 )
-
 [node name="Label" type="Label" parent="."]
-margin_left = 112.0
-margin_top = 23.0
-margin_right = 912.0
-margin_bottom = 373.0
-text = "You are at the start. What do you want to do?"
+margin_left = 144.0
+margin_top = 8.0
+margin_right = 908.0
+margin_bottom = 90.0
+text = "You sit down at the table to celebrate Thanksgiving with your family. Wow, the food looks delicious- you’re so excited to dig in. There’s corn, mashed potatoes with gravy, rolls, and of course, turkey. Everything looks so good, but you can’t decide what to get first.
+	What do you want to do?
+"
 align = 1
 valign = 1
+autowrap = true
+percent_visible = -0.00414938
 
 [node name="Responses" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Response1" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 380.0
-margin_right = 712.0
-margin_bottom = 420.0
-text = "Go to Ready Room"
+margin_left = 160.0
+margin_top = 528.0
+margin_right = 272.0
+margin_bottom = 592.0
+text = "Get the corn"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/ReadyRoom.tscn"
 
 [node name="Response2" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 425.0
-margin_right = 712.0
-margin_bottom = 465.0
-text = "Go to Turkey"
+margin_left = 712.0
+margin_top = 528.0
+margin_right = 887.0
+margin_bottom = 592.0
+text = "Get the mashed potatoes"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Turkey.tscn"
 
 [node name="Response3" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 470.0
-margin_right = 712.0
-margin_bottom = 510.0
-text = "Response"
+margin_left = 456.0
+margin_top = 528.0
+margin_right = 576.0
+margin_bottom = 592.0
+text = "Get the rolls"
 script = ExtResource( 1 )
+Next_Scene = "res://Scenes/Location5.tscn"
 
 [node name="Response4" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 515.0
-margin_right = 712.0
-margin_bottom = 555.0
+margin_left = 638.0
+margin_top = 717.0
+margin_right = 1038.0
+margin_bottom = 757.0
 text = "Response"
 script = ExtResource( 1 )
+Next_Scene = "res://Scenes/Location4.tscn"
 
 [node name="Response5" type="Button" parent="Responses"]
 margin_left = 312.0
-margin_top = 560.0
+margin_top = 627.0
 margin_right = 712.0
-margin_bottom = 600.0
+margin_bottom = 667.0
 text = "Response"
 script = ExtResource( 1 )
 

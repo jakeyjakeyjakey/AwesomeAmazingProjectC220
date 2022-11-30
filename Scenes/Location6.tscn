@@ -23,53 +23,58 @@ margin_left = 112.0
 margin_top = 23.0
 margin_right = 912.0
 margin_bottom = 373.0
-text = "This is location 6"
+text = "TURKEY:
+The turkey is under a silver platter. You lift up the lid. Suddenly, a clump of feathers hits you in the face! A living turkey clambers out from under the platter, and it looks like it wants you for dinner instead. You need to act fast! 	What do you want to do?
+"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="Responses" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Response1" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 380.0
-margin_right = 712.0
-margin_bottom = 420.0
+margin_left = 73.0
+margin_top = 688.0
+margin_right = 473.0
+margin_bottom = 728.0
 text = "go back to location 5"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location5.tscn"
 
 [node name="Response2" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 425.0
-margin_right = 712.0
-margin_bottom = 465.0
+margin_left = 591.0
+margin_top = 692.0
+margin_right = 991.0
+margin_bottom = 732.0
 text = "go back to start"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Start.tscn"
 
 [node name="Response3" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 470.0
-margin_right = 712.0
-margin_bottom = 510.0
-text = "Response"
+margin_left = 116.0
+margin_top = 425.0
+margin_right = 516.0
+margin_bottom = 465.0
+text = "Throw mashed potatoes"
 script = ExtResource( 1 )
+Next_Scene = "res://Scenes/Location7.tscn"
 
 [node name="Response4" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 515.0
-margin_right = 712.0
-margin_bottom = 555.0
-text = "Response"
+margin_left = 574.0
+margin_top = 427.0
+margin_right = 974.0
+margin_bottom = 467.0
+text = "Throw Corn"
 script = ExtResource( 1 )
+Next_Scene = "res://Scenes/Location8.tscn"
 
 [node name="Response5" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 560.0
-margin_right = 712.0
-margin_bottom = 600.0
+margin_left = 313.0
+margin_top = 624.0
+margin_right = 713.0
+margin_bottom = 664.0
 text = "Response"
 script = ExtResource( 1 )
 
