@@ -19,32 +19,35 @@ margin_bottom = 375.0
 color = Color( 0, 0, 0, 0.509804 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 112.0
-margin_top = 23.0
-margin_right = 912.0
-margin_bottom = 373.0
-text = "Gobble Gobble"
+margin_left = 205.0
+margin_top = 141.0
+margin_right = 815.0
+margin_bottom = 263.0
+text = "MASHED POTATOES AND GRAVY:
+Mashed potatoes are your favorite food! You scoop the mashed potatoes off the dish and add them to your plate. Then, you spoon some hot gravy on top.
+"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="Responses" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Response1" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 380.0
-margin_right = 712.0
-margin_bottom = 420.0
-text = "Go back to Ready Room"
+margin_left = 314.0
+margin_top = 384.0
+margin_right = 714.0
+margin_bottom = 424.0
+text = "Get the corn"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/ReadyRoom.tscn"
 
 [node name="Response2" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 425.0
-margin_right = 712.0
-margin_bottom = 465.0
+margin_left = 123.0
+margin_top = 668.0
+margin_right = 523.0
+margin_bottom = 708.0
 text = "Go to Location 4"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location4.tscn"
@@ -54,7 +57,7 @@ margin_left = 312.0
 margin_top = 470.0
 margin_right = 712.0
 margin_bottom = 510.0
-text = "Go to Location 5"
+text = "Get the rolls"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location5.tscn"
 
