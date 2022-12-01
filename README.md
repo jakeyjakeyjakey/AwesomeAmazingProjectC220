@@ -18,10 +18,10 @@ https://www.youtube.com/watch?v=N6geUSN7aWE&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjU
 Riley created the background images for the scenes. 
 
 ## Future Development
-N/A
+Add more juicy features like sounds when pressing buttons.
 
 # Created by: Awesome Fun Group 
 (Collabed on Thanksgiving idea as a team)
 Lucie: created outline
 Riley: created script and created background images.
-Jacob:
+Jacob: created music 
