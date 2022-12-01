@@ -1,28 +1,32 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Response.gd" type="Script" id=1]
 [ext_resource path="res://Template.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Untitled_Artwork copy.jpg" type="Texture" id=3]
 
 [node name="ReadyRoom" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 3.0
+margin_top = -4.0
+margin_right = 1023.0
+margin_bottom = 605.0
+color = Color( 0, 0, 0, 1 )
+
 [node name="Background" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
+scale = Vector2( 0.390625, 0.390625 )
+texture = ExtResource( 3 )
 centered = false
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 112.0
-margin_top = 25.0
-margin_right = 912.0
-margin_bottom = 375.0
-color = Color( 0, 0, 0, 0.509804 )
-
 [node name="Label" type="Label" parent="."]
-margin_left = 112.0
-margin_top = 23.0
+margin_left = 148.0
+margin_top = -145.0
 margin_right = 912.0
-margin_bottom = 373.0
+margin_bottom = 246.0
 text = "The corn looks so buttery and steamy. You grab a heaping spoonful and put it on your plate.
 	What do you want to do?
 "
@@ -43,19 +47,19 @@ script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Start.tscn"
 
 [node name="Response2" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 425.0
-margin_right = 712.0
-margin_bottom = 465.0
+margin_left = 73.0
+margin_top = 539.0
+margin_right = 473.0
+margin_bottom = 579.0
 text = "Get the mashed potatoes"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Turkey.tscn"
 
 [node name="Response3" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 470.0
-margin_right = 712.0
-margin_bottom = 510.0
+margin_left = 535.0
+margin_top = 539.0
+margin_right = 935.0
+margin_bottom = 579.0
 text = "Get the rolls"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location5.tscn"

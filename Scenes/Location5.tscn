@@ -1,28 +1,31 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Response.gd" type="Script" id=1]
 [ext_resource path="res://Template.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Untitled_Artwork copy 3.jpg" type="Texture" id=3]
 
 [node name="Location5" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 2.0
+margin_right = 1024.0
+margin_bottom = 602.0
+color = Color( 0, 0, 0, 1 )
+
 [node name="Background" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
+scale = Vector2( 0.39388, 0.39388 )
+texture = ExtResource( 3 )
 centered = false
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 112.0
-margin_top = 25.0
-margin_right = 912.0
-margin_bottom = 375.0
-color = Color( 0, 0, 0, 0.509804 )
-
 [node name="Label" type="Label" parent="."]
-margin_left = 112.0
-margin_top = 23.0
-margin_right = 912.0
-margin_bottom = 373.0
+margin_left = 122.0
+margin_top = -135.0
+margin_right = 922.0
+margin_bottom = 215.0
 text = "ROLLS:
 You reach over to grab a roll, but then you realize that you forgot you’re allergic to gluten. You don’t end up putting anything on your plate.
 	What do you want to do?"
@@ -35,28 +38,28 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Response1" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 380.0
-margin_right = 712.0
-margin_bottom = 420.0
+margin_left = 24.0
+margin_top = 547.0
+margin_right = 282.0
+margin_bottom = 587.0
 text = "Get the mashed potatoes"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Turkey.tscn"
 
 [node name="Response2" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 425.0
-margin_right = 712.0
-margin_bottom = 465.0
+margin_left = 399.0
+margin_top = 546.0
+margin_right = 648.0
+margin_bottom = 586.0
 text = "Get the corn"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/ReadyRoom.tscn"
 
 [node name="Response3" type="Button" parent="Responses"]
-margin_left = 312.0
-margin_top = 470.0
-margin_right = 712.0
-margin_bottom = 510.0
+margin_left = 734.0
+margin_top = 545.0
+margin_right = 947.0
+margin_bottom = 585.0
 text = "Get the turkey"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location6.tscn"

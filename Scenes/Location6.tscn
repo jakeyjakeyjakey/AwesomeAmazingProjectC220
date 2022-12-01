@@ -1,28 +1,32 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Response.gd" type="Script" id=1]
 [ext_resource path="res://Template.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Untitled_Artwork copy 2.jpg" type="Texture" id=3]
 
 [node name="Location6" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1.0
+margin_top = 3.0
+margin_right = 1024.0
+margin_bottom = 603.0
+color = Color( 0, 0, 0, 1 )
+
 [node name="Background" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
+scale = Vector2( 0.394531, 0.394531 )
+texture = ExtResource( 3 )
 centered = false
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 112.0
-margin_top = 25.0
-margin_right = 912.0
-margin_bottom = 375.0
-color = Color( 0, 0, 0, 0.509804 )
-
 [node name="Label" type="Label" parent="."]
-margin_left = 112.0
-margin_top = 23.0
-margin_right = 912.0
-margin_bottom = 373.0
+margin_left = 140.0
+margin_top = -126.0
+margin_right = 940.0
+margin_bottom = 224.0
 text = "TURKEY:
 The turkey is under a silver platter. You lift up the lid. Suddenly, a clump of feathers hits you in the face! A living turkey clambers out from under the platter, and it looks like it wants you for dinner instead. You need to act fast! 	What do you want to do?
 "
@@ -53,19 +57,19 @@ script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Start.tscn"
 
 [node name="Response3" type="Button" parent="Responses"]
-margin_left = 116.0
-margin_top = 425.0
-margin_right = 516.0
-margin_bottom = 465.0
+margin_left = 101.0
+margin_top = 545.0
+margin_right = 501.0
+margin_bottom = 585.0
 text = "Throw mashed potatoes"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location7.tscn"
 
 [node name="Response4" type="Button" parent="Responses"]
-margin_left = 574.0
-margin_top = 427.0
-margin_right = 974.0
-margin_bottom = 467.0
+margin_left = 564.0
+margin_top = 543.0
+margin_right = 964.0
+margin_bottom = 583.0
 text = "Throw Corn"
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location8.tscn"
