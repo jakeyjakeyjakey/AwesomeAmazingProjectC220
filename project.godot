@@ -14,6 +14,10 @@ config/name="AwesomeAmazingProject"
 run/main_scene="res://Scenes/Start.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Music="*res://Music.tscn"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
