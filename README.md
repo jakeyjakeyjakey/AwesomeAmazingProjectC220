@@ -11,7 +11,7 @@ Interactive fiction game- click through with what food items you want.. but bewa
 We had some issues utilizing the github collab feature with committing branches and getting certain files to appear for everyone.
 
 ## Implementation
-
+- Procreate used for background images
 
 ## References
 https://www.youtube.com/watch?v=N6geUSN7aWE&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjUEMx&index=3 for the template. 
