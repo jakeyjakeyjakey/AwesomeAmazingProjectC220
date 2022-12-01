@@ -31,7 +31,6 @@ text = "You sit down at the table to celebrate Thanksgiving with your family. Wo
 align = 1
 valign = 1
 autowrap = true
-percent_visible = -0.00414938
 
 [node name="Responses" type="Control" parent="."]
 margin_right = 40.0
