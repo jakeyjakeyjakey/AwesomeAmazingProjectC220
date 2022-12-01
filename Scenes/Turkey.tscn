@@ -1,7 +1,25 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Response.gd" type="Script" id=1]
 [ext_resource path="res://Template.gd" type="Script" id=2]
+=======
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Response.gd" type="Script" id=1]
+[ext_resource path="res://Template.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Untitled_Artwork copy 6.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/Naga.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 4 )
+>>>>>>> Stashed changes
 
 [node name="Turkey" type="Control"]
 anchor_right = 1.0
@@ -19,11 +37,22 @@ margin_bottom = 375.0
 color = Color( 0, 0, 0, 0.509804 )
 
 [node name="Label" type="Label" parent="."]
+<<<<<<< Updated upstream
 margin_left = 112.0
 margin_top = 23.0
 margin_right = 912.0
 margin_bottom = 373.0
 text = "Gobble Gobble"
+=======
+margin_left = 220.0
+margin_top = -10.0
+margin_right = 830.0
+margin_bottom = 112.0
+custom_fonts/font = SubResource( 3 )
+text = "MASHED POTATOES AND GRAVY:
+Mashed potatoes are your favorite food! You scoop the mashed potatoes off the dish and add them to your plate. Then, you spoon some hot gravy on top.
+"
+>>>>>>> Stashed changes
 align = 1
 valign = 1
 
@@ -32,11 +61,21 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Response1" type="Button" parent="Responses"]
+<<<<<<< Updated upstream
 margin_left = 312.0
 margin_top = 380.0
 margin_right = 712.0
 margin_bottom = 420.0
 text = "Go back to Ready Room"
+=======
+margin_left = 107.0
+margin_top = 539.0
+margin_right = 507.0
+margin_bottom = 579.0
+custom_colors/font_color = Color( 0.972549, 0.694118, 0.172549, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Get the corn"
+>>>>>>> Stashed changes
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/ReadyRoom.tscn"
 
@@ -50,11 +89,21 @@ script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location4.tscn"
 
 [node name="Response3" type="Button" parent="Responses"]
+<<<<<<< Updated upstream
 margin_left = 312.0
 margin_top = 470.0
 margin_right = 712.0
 margin_bottom = 510.0
 text = "Go to Location 5"
+=======
+margin_left = 537.0
+margin_top = 543.0
+margin_right = 937.0
+margin_bottom = 583.0
+custom_colors/font_color = Color( 0.6, 0.384314, 0.211765, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Get the rolls"
+>>>>>>> Stashed changes
 script = ExtResource( 1 )
 Next_Scene = "res://Scenes/Location5.tscn"
 
